@@ -114,7 +114,7 @@ z-index: 5;
     flex-direction: column;
     text-align: start;
     z-index: 3;
-   padding: 20% 43% 0px 3%;
+   padding: 20% 35% 100px 5%;
     color: white;
     grid-column: 1;
     grid-row: 1;
@@ -125,8 +125,8 @@ z-index: 5;
 }
 
 .hero-colagge{
-  padding: 15% 5px 0px 0px;
- width: 210px;
+  padding: 15% 10px 0px 0px;
+ width: 220px;
  height: 430px;
  align-self: center;
   position: relative;
@@ -172,7 +172,7 @@ width: 100%;
     z-index: 2;
     width: 90%;
     justify-self: center;
-   margin-bottom: 10px;
+   margin-bottom: 45%;
 }
 
 
@@ -232,7 +232,7 @@ background: transparent;
   height: 50px;
   position: absolute;
   color: #fff;
-  bottom: 0;
+  bottom: 15%;
   z-index: 2;
   left: 50%;
   animation: arrow 2s cubic-bezier(0.4, 0, 0.2, 1) infinite,  pulse 2s ease-in-out infinite;;
