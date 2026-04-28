@@ -232,7 +232,7 @@ background: transparent;
   height: 50px;
   position: absolute;
   color: #fff;
-  bottom: 15%;
+  bottom: 10vh;
   z-index: 2;
   left: 50%;
   animation: arrow 2s cubic-bezier(0.4, 0, 0.2, 1) infinite,  pulse 2s ease-in-out infinite;;
