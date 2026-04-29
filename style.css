@@ -80,7 +80,7 @@ content: '';
 position: absolute;
 inset: 0;
 background: radial-gradient(
-circle at 70% 30%, rgba(120, 180, 80, 0.20),
+circle at 70% 30%, rgba(73, 109, 48, 0.2),
 transparent 60%
 );
 z-index: 2;
@@ -95,10 +95,10 @@ position: absolute;
 inset: 0;
 background: linear-gradient(
   to right, 
-  rgba(0,0,0,0.75) 0%,
-  rgba(0,0,0,0.6) 30%,
-  rgba(0,0,0,0.3) 60%,
-  rgba(0,0,0,0.1) 100%
+  rgba(75, 74, 74, 0.815) 0%,
+  rgba(41, 39, 39, 0.6) 30%,
+  rgba(66, 64, 64, 0.3) 60%,
+  rgba(110, 103, 103, 0.1) 100%
 );
 border: 1px solid rgb(109, 106, 106);
 z-index: 1;
@@ -178,12 +178,12 @@ width: 100%;
     font-size: clamp(40px, 11vw, 50px);
     line-height: 1.2;
     letter-spacing: -0.5px;
-    font-weight: 600;
+    font-weight: 800;
+     color: rgba(77, 133, 56, 1);
 }
 
 #talent{
-  color: rgb(77, 133, 56);
-  font-style: italic;
+  color: rgba(77, 133, 56, 1);
 }
 
 .hero-texto {
@@ -201,8 +201,18 @@ width: 100%;
     align-items: center;
     z-index: 2;
     width: 100%;
+    gap: 5px;
 }
 
+.boton-vender{
+   width: 90%;
+   color: white;
+   background: transparent;
+   backdrop-filter: blur(6px);
+    padding: 14px;
+    border-radius: 14px;
+     border: 1px solid rgba(255,255,255,0.4);
+}
 
 .boton-secundario {
     width: 90%;
