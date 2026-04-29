@@ -64,7 +64,7 @@ body {
    min-height: 100svh;
     position: relative;
     display: flex;
-      padding-top: clamp(70px, 15vh, 100px);
+      padding-top: clamp(70px, 20vh, 115px);
     flex-direction: column;
     justify-content: space-between;
     
