@@ -16,16 +16,15 @@ body {
 
 /* ================= HEADER ================= */
 .encabezado {
-    z-index: 4;
+    z-index: 2;
     position: fixed;
     top: 0;
     width: 100%;
     padding: 15px 20px;
      
     border-radius: 0px 0px 0px 0px;
-    opacity: 0.9;
     transition: all 0.3s ease;
-   
+   background: rgba(255,255,255,0.1);
 }
 .encabezado.active{
 
@@ -35,18 +34,22 @@ body {
 
 .encabezado-contenido {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 
 .logo {
     display: flex;
-    gap: 45px;
-    font-weight: bold;
+    gap: 30px;
     color: #fff;
-    font-size: 15px;
     align-items: center;
+}
+
+#img-logo{
+width: 220px;
+height: 25px;
+
 }
 
 
@@ -71,26 +74,15 @@ body {
 }
 
 
-.hero::before{
-    content: '';
-position: absolute;
-inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(20,30,10,0.65),
-    rgba(20,30,10,0.6),
-    rgba(20,30,10,0.3),
-    rgba(20,30,10,0.2)
-  );
-z-index: 1;
-}
+
 
 .hero::after{
     content: '';
 position: absolute;
 inset: 0;
-background: rgba(148, 80, 3, 0.08);
-z-index: 2;
+background: rgb(0, 0, 0,0.6);
+border: 1px solid rgb(109, 106, 106);
+z-index: 1;
 
 
 }
