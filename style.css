@@ -210,11 +210,41 @@ width: 100%;
     padding: 14px;
     border-radius: 14px;
     background: linear-gradient(
-      135deg, rgba(77,133,56,0.9), rgba(59,97,45,0.9)
+      135deg, rgba(23, 37, 18, 0.9), rgba(30, 75, 14, 0.9)
     );
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: all 0.25s ease;
+}
+
+.boton-secundario:hover{
+
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+.boton-secundario:active{
+
+transform: scale(0.97);
+
+}
+.boton-secundario::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255,255,255,0.2),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.boton-secundario:hover::after {
+  opacity: 1;
 }
 
 .boton-search{
@@ -274,13 +304,19 @@ background: transparent;
   position: relative;
   color: #fff;
   z-index: 2;
+  opacity: 0.8;
   animation: arrow 2s cubic-bezier(0.4, 0, 0.2, 1) infinite,  pulse 2s ease-in-out infinite;;
 
+}
+.arrow p{
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 #arrow{
   color: #fff;
   width: 20px;
   height: 20px;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.6));
 }
 @keyframes arrow{
   0%{
