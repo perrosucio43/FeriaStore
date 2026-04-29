@@ -95,7 +95,7 @@ position: absolute;
 inset: 0;
 background: linear-gradient(
   to right, 
-  rgba(75, 74, 74, 0.815) 0%,
+  rgba(73, 73, 73, 0.815) 0%,
   rgba(41, 39, 39, 0.6) 30%,
   rgba(66, 64, 64, 0.3) 60%,
   rgba(177, 177, 177, 0.13) 100%
@@ -178,13 +178,10 @@ width: 100%;
     font-size: clamp(40px, 11vw, 50px);
     line-height: 1.2;
     letter-spacing: -0.5px;
-    font-weight: 800;
-     color: rgba(77, 133, 56, 1);
+    font-weight: 900;
+     color: rgb(93, 163, 67);
 }
 
-#talent{
-  color: rgba(77, 133, 56, 1);
-}
 
 .hero-texto {
   font-size: 19px;
