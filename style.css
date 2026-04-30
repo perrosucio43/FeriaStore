@@ -17,11 +17,8 @@ body {
 
 /* ================= HEADER ================= */
 .encabezado {
-   z-index: 2;
-    position: fixed;
-    top: 0;
+   z-index: 1;
     width: 100%;
-    padding: 10px 20px;
     transition: all 0.3s ease;
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(4px);
@@ -33,9 +30,13 @@ body {
 }
 
 .encabezado-contenido {
+  width: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+     padding: 10px 15px;
+   
 }
 
 
@@ -94,7 +95,7 @@ height: 100%;
 .hero-contenido {
   position: relative;
     left: clamp(16px, 15vw, 80px);
-    margin-top: 100px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -137,8 +138,9 @@ height: 100%;
   flex-direction: column;
   grid-row: 3;
   position: relative;
-  padding-bottom: 15dvh;
-  gap: 15px;
+  padding-bottom: 25dvh;
+   padding-bottom: calc(20dvh + env(safe-area-inset-bottom));
+  gap: 12px;
 }
 .hero-botones {
   height: auto;
