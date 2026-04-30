@@ -105,7 +105,7 @@ height: 100%;
 .hero-contenido {
     position: absolute;
     top: 55px;
-    top: clamp(80px, 14dvh, 140px);
+    top: clamp(80px, 14svh, 140px);
     left: clamp(16px, 15vw, 80px);
     display: flex;
     flex-direction: column;
