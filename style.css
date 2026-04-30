@@ -137,10 +137,8 @@ height: 100%;
   flex-direction: column;
   grid-row: 3;
   position: relative;
-  padding-bottom: 20dvh;
-   padding-bottom: calc(15dvh + env(safe-area-inset-bottom));
-
-  gap: 25px;
+  padding-bottom: 15dvh;
+  gap: 15px;
 }
 .hero-botones {
   height: auto;
