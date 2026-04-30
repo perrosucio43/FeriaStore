@@ -102,7 +102,7 @@ height: 100%;
 
 .hero-contenido {
     position: absolute;
-    top: clamp(80px, 14vh, 140px);
+    top: clamp(80px, 12vh, 140px);
     left: clamp(16px, 15vw, 80px);
     display: flex;
     flex-direction: column;
@@ -146,6 +146,8 @@ height: 100%;
   flex-direction: column;
   position: relative;
   padding-bottom: 20vh;
+   padding-bottom: calc(20vh + env(safe-area-inset-bottom));
+
   gap: 40px;
 }
 .hero-botones {
@@ -230,7 +232,7 @@ background: transparent;
 .hero-arrow{
   position: absolute;
   bottom: 10px;
-  bottom: calc(5px + env(safe-area-inset-bottom));
+  bottom: calc(1.5vh + env(safe-area-inset-bottom));
   width: 100%;
   display: flex;
   justify-content: center;
