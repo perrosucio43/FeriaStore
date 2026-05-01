@@ -176,13 +176,25 @@ stroke: white;
 }
 
 .boton-vender, .boton-secundario{
-   width: 40%;
-   color: rgb(14, 14, 14);
-   background: white;
-   backdrop-filter: blur(6px);
+    width: 160px;
     padding: 10px;
-    border-radius: 20px;
-     border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 999px;
+    border: none;
+    
+}
+.boton-secundario{
+background: linear-gradient(180deg, #3E74A8 0%, #24507c 50%, #254C73 100%);
+color:white;
+box-shadow: 0 6px 15px rgba(0,0,0,0.25),
+inset 0 3px 1px rgba(255,255,255,0.15), 
+inset 0 -3px 1px rgba(0,0,0,0.3);
+
+}
+.boton-vender{
+  background: #f4f6f8;
+  border: 1.5px solid #2f5f8f;
+  color: #2F5F8F;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.35);
 }
 
 
