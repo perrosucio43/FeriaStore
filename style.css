@@ -74,7 +74,6 @@ height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100dvh;
-    min-height: 100svh;
     
 }
 
@@ -86,7 +85,7 @@ height: 100%;
     background-image: url("/assets/background.jpeg");
     background-position: center top;
     background-repeat: no-repeat;
-  background-size: cover;
+    background-size: cover;
   
     
 }
@@ -139,8 +138,7 @@ height: 100%;
   grid-row: 3;
   position: relative;
   padding-bottom: 25dvh;
-   padding-bottom: calc(20dvh + env(safe-area-inset-bottom));
-  gap: 12px;
+  gap: 15px;
 }
 .hero-botones {
   height: auto;
@@ -239,8 +237,7 @@ background: transparent;
 
 .hero-arrow{
   position: absolute;
-  bottom: 8px;
-  bottom: calc(1.2vh + env(safe-area-inset-bottom));
+  bottom: 1dvh;
   width: 100%;
   display: flex;
   justify-content: center;
