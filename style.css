@@ -7,6 +7,11 @@
 }
 a{
 text-decoration: none;
+color: white;
+}
+button{
+  border: none;
+  background: none;
 }
 
 body {
@@ -66,11 +71,87 @@ height: 100%;
 .boton-menu {
     width: 20px;
     height: 20px;
-    background: none;
-    border: none;
-    color: white;
     cursor: pointer;
+    z-index: 2;
 }
+.min-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  position: absolute;
+  opacity: 0;
+  background-color: #2838ac;
+  right: 0;
+  width: 115px;
+  height: 115px;
+  border-bottom-left-radius: 100%;
+  z-index: 0;
+  transition: all 0.1s ease;
+}
+
+.min-menu svg{
+  width: 30px;
+  height: 30px;
+  fill: white;
+  stroke: none;
+
+}
+.min-menu svg:nth-child(1){
+margin-left: 30px;
+}
+.min-menu svg:nth-child(2){
+margin-left: 70px;
+}
+.min-menu.active{
+width: 230px;
+height: 230px;
+opacity: 1;
+transition: all 0.3s ease;
+}
+.menu-desplegable{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 100%;
+  right: 0;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  transition: all 0.2s ease;
+  
+}
+.menu-desplegable.active ul{
+display: flex;
+pointer-events: all;
+}
+.menu-desplegable.active{
+  width: 180px;
+  height: 180px;
+  background-color: #1530ac;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.links-menu{
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+  color: #eef0ff;
+  gap: 40px;
+  pointer-events: none;
+}
+.links-menu li:nth-child(1){
+padding-left: 5px;
+}
+.links-menu li:nth-child(2){
+padding-left: 30px;
+}
+.links-menu li:nth-child(3){
+padding-left: 100px;
+}
+
+
 .boton-menu svg{
   width: 100%;
   height: 100%;
@@ -145,15 +226,17 @@ height: 100%;
   display: flex;
   flex-direction: column;
   grid-row: 3;
-  padding-bottom: 18dvh;
+  padding-bottom: 15dvh;
   gap: 20px;
 }
+
 .hero-botones {
   height: auto;
     margin-top: 20px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items: center;
+    gap: 20px;
     z-index: 2;
     width: 100%;
 }
@@ -170,12 +253,13 @@ height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 45px;
-  height: 45px;
+  width: clamp(42px, 1vw, 50px);
+  height: clamp(42px, 1vw, 50px);
   
 }
 .icon-svg p{
   color: #24507c;
+  font-size: clamp(11px, 4vw, 32px);
 }
 .icon-svg svg{
 
@@ -187,10 +271,11 @@ stroke: #24507c;
 
 .boton-vender, .boton-secundario{
     width: 160px;
-    padding: 10px;
+    padding: clamp(8px, 1vw, 12px);
     border-radius: 999px;
     border: none;
-    
+    width: clamp(120px, 40vw, 160px);
+    font-size: clamp(11px, 4vw, 32px);
 }
 .boton-secundario{
 background: linear-gradient(180deg, #3E74A8 0%, #24507c 50%, #254C73 100%);
@@ -299,65 +384,7 @@ background: transparent;
   100% { filter: drop-shadow(0 0 0px white); }
 }
 
-.desc-hero>:nth-child(2){
 
-border-left: 1px solid rgba(255,255,255,0.3);
-margin-bottom: 10px;
-  
-}
-.desc-hero>:nth-child(3){
- 
-border-left: 1px solid rgba(255,255,255,0.3);
-margin-bottom: 10px;
-}
-
-.desc-hero p{
-  opacity: 0.8;
-  font-family: sans-serif;
-  z-index: 2;
-  
-}
-.desc-hero::before{
-
-content: '';
-position: absolute;
-inset: 0;
- background: rgb(76, 112, 67);
-
-}
- 
-
-.item-desc{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  z-index: 3;
-  padding: 20px 0px;
-
-}
-
-.item-desc svg{
-
-width: 30px;
-height: 30px;
-color: #fff;
-z-index: 3;
-
-}
-.item-desc p{
-font-size: 12px;
-
-}
-#heart{
-  color: rgba(161, 14, 9, 0.925);
-}
-#social{
-  color: #1530ac;
-}
-#bag{
-  color: rgb(209, 150, 22);
-}
 
 
 .seccion-talleres{
@@ -480,17 +507,21 @@ align-items: center;
 }
 .category-badge {
   font-size: 0.75rem;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: #eef0ff;
-  color: #5a54e6;
   font-weight: 500;
   white-space: nowrap;
 }
 .category{
-
+  background: #eef0ff;
+  color: #5a54e6;
+  border-radius: 999px;
  display: inline-flex;
- align-items: center;   
+ align-items: center;  
+ padding: 6px 10px; 
+ gap: 5px;
+}
+.category-svg{
+  display: flex;
+  align-items:center;
 }
 .btn-content svg{
 
@@ -516,20 +547,6 @@ align-items: center;
   opacity: 0.9;
 }
 
-
-.store-card.tecnologia{
-
-}
-.store-card.comida{
-
-}
-.store-card.ropa{
-  
-}
-.store-card.servicios{
-  
-}
-
 /* 📱 MOBILE FIRST ya está optimizado */
 
 /* 💻 DESKTOP */
@@ -553,22 +570,123 @@ align-items: center;
     text-align: center;
 }
 
+.desc-hero{
+  height: 80px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  border: none;
+}
+.desc-hero>:nth-child(1){
+
+ border: 1px solid rgba(255, 255, 255, 0.1);
+margin-bottom: 10px;
+  
+}
+.desc-hero>:nth-child(2){
+
+ border: 1px solid rgba(255, 255, 255, 0.1);
+margin-bottom: 10px;
+  
+}
+.desc-hero>:nth-child(3){
+ 
+border: 1px solid rgba(255, 255, 255, 0.1);
+margin-bottom: 10px;
+}
+
+.desc-hero p{
+  opacity: 0.8;
+  font-family: sans-serif;
+  z-index: 2;
+  
+}
+.desc-hero::before{
+
+content: '';
+position: absolute;
+inset: 0;
+background:#2F5F8F;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+
+}
+ 
+
+.item-desc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+
+}
+
+.item-desc svg{
+
+width: 30px;
+height: 30px;
+color: #fff;
+z-index: 3;
+
+}
+.item-desc p{
+font-size: 12px;
+
+}
+#heart{
+  color: rgba(161, 14, 9, 0.925);
+}
+#social{
+  color: #1530ac;
+}
+#bag{
+  color: rgb(209, 150, 22);
+}
 
 /* ================= FOOTER ================= */
+
+
 .pie {
-    background: #2D3621;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background:#2F5F8F;
     color: white;
-    padding: 40px 20px;
+    padding: 20px;
+    
 }
+
 
 .pie-nav {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
-
-.pie a {
-    color: #ccc;
-    text-decoration: none;
+.nav-item{
+  display: flex;
+}
+.back{
+  background: transparent;
+  align-self:flex-end;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.back a svg{
+  fill:#2F5F8F;
+  stroke:white;
+  width: 100%;
+  height: 100%;
+}
+.content-footer{
+  display: flex;
+  justify-content: space-between;
 }

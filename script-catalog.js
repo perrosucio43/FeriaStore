@@ -58,7 +58,7 @@ function createCat(product){
   </div>
 
   <p class="description-card">${product.description}</p>
-  <p class="price-card">${product.price}</p>
+  <p class="price-card">$${product.price}</p>
 
 </div>`;
 }
@@ -89,6 +89,7 @@ if(btncart){
     const product=currentstore.productos.find(x=>x.id==ID);
     console.log("producto enviado a cart", product, currentstore.name, currentstore.phone);
     addtoCart(product, currentstore.name, currentstore.phone);
+    alert("producto agregado al carrito");
 }
 
 const btnmovil=e.target.closest(".botton-cart");
