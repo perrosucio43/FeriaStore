@@ -146,7 +146,7 @@ height: 100%;
   flex-direction: column;
   grid-row: 3;
   position: relative;
-  padding-bottom: clamp(10dvh, 25dvh, 30dvh);
+  padding-bottom: clamp(5dvh, 15dvh, 25dvh);
   gap: 20px;
 }
 .hero-botones {
