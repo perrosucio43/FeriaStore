@@ -1,15 +1,13 @@
 [
 
 {
-
-
-},
-
-{
-
-
+    "id":1,
+    "name":"tecnomundo",
+    "category": "tecnologia",
+    "textspan": "Tecnologia y electronica",
+    "img1": "/assets/actividades-economicas-e1597776689324.webp",
+    "img2":"/assets/Ahin+Wellness+-+Spa+-+2-5f677d59-640w.webp",
+    "img3":"/assets/concepto-de-la-comida-basura-fondo-malsano-alimentos-preparación-rápida-y-azúcar-hamburguesa-dulces-microprocesadores-chocolate-137097176.webp"
 
 }
-
-
 ]

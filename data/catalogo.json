@@ -1,0 +1,44 @@
+[
+
+{
+    "id": 1,
+    "name": "jose maria",
+    "textdescription": "hola me llamo jose y me gustan las motos",
+    "categoria": "motos al piso",
+    "perfil": "/assets/actividades-economicas-e1597776689324.webp",
+    "contacto": "3755motos",
+    "phone": 3755650247,
+    
+
+    "productos":
+    [
+        {
+            "id":100,
+            "description":"lapiz mecanico",
+            "price":18000,
+            "imgcatalog":"/assets/Ahin+Wellness+-+Spa+-+2-5f677d59-640w.webp"
+
+        },
+
+        {
+
+            "id":101,
+            "description": "robot",
+            "price": 20000,
+            "imgcatalog":"/assets/Ahin+Wellness+-+Spa+-+2-5f677d59-640w.webp"       
+        },
+        {
+
+            "id":102,
+            "description": "moto",
+            "price": 20000,
+            "imgcatalog":"/assets/actividades-economicas-e1597776689324.webp"       
+        }
+
+
+
+    ]
+
+}
+
+]

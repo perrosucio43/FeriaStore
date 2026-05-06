@@ -1,0 +1,192 @@
+*{
+
+margin: 0;
+padding: 0;
+font-family: sans-serif, serif;
+
+}
+
+body{
+display: grid;
+grid-template-rows: auto 1fr auto;
+gap: 20px;
+
+}
+.encabezado {
+   z-index: 1;
+    width: 100%;
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(4px);
+}
+.encabezado.active{
+
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+}
+
+.encabezado-contenido {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     padding: 10px 15px;
+   
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.container-img{
+width: 150px;
+height: 35px;
+
+}
+
+#img-logo{
+width: 100%;
+height: 100%;
+
+}
+
+
+.botton-cart, .boton-menu{
+width: 30px;
+height: 25px;
+background: transparent;
+border:none;
+}
+.botton-cart svg, .boton-menu svg{
+    color: rgb(28, 8, 202);
+    width: 100%;
+    height: 100%;
+}
+
+.container-info{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalog-container{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ margin-top: 10px;  
+ gap: 10px;
+ margin: 0px 5px;
+}
+.info-perfil{
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  border-radius: 50%;
+}
+.info-text{
+  gap: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.info-text span{
+padding: 0px 5px;
+background-color: blueviolet;
+border-radius: 20px;
+color: aliceblue;
+}
+.info-text p{
+  padding: 0px 100px;
+  text-align: center;
+}
+
+.img-perfil{
+   width: 100%;
+   height: 100%; 
+   border-radius: 50%;
+}
+.home{
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top:10dvh;
+ 
+  z-index:1;
+}
+
+.home svg{
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.card{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 200px;
+align-self: center;
+justify-self: center;
+}
+
+.img-card{
+  width: 100%;
+  height: 150px;
+  background-color: aquamarine;
+  position: relative;
+}
+.btn-cart{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.img-logo-card{
+    width: 100%;
+    height: 100%;
+}
+.btn-cart{
+  padding: 0px 5px;
+  border-radius: 12px;
+}
+.personalizado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-personalizado{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin: 0px 10px;
+  background-color: aqua;
+  text-align: center;
+  padding: 70px;
+  border-radius: 20px;
+}
+.btn-personalizado{
+  margin: 0px 40px;
+  padding: 10px;
+  background-color: antiquewhite;
+  color:blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
